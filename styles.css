@@ -62,21 +62,21 @@ body {
 
 .hero {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   text-align: center;
-  padding-top: 82px;
+  padding-top: 72px;
 }
 
 .hero h1 {
   margin: 0 auto;
-  max-width: 860px;
-  width: min(100%, 860px);
+  max-width: 980px;
+  width: min(100%, 980px);
   font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
-  font-size: clamp(5rem, 9vw, 15rem);
-  line-height: 0.8;
+  font-size: clamp(6.2rem, 11vw, 15.5rem);
+  line-height: 0.78;
   color: var(--ink);
   letter-spacing: -0.09em;
-  transform: scaleY(0.92);
+  transform: scaleY(0.94);
   text-shadow: 2px 4px 0 rgba(132, 31, 16, 0.25);
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .subhead .script {
-  font-size: clamp(1.2rem, 2.1vw, 2.5rem);
+  font-size: clamp(1.3rem, 2.3vw, 2.5rem);
   font-style: italic;
   letter-spacing: 0.03em;
   color: var(--gold-dark);
@@ -102,22 +102,22 @@ body {
 }
 
 .subhead .caps {
-  font-size: clamp(1.3rem, 2vw, 2rem);
+  font-size: clamp(1.3rem, 2.3vw, 2.1rem);
   letter-spacing: 0.14em;
   text-shadow: 0 1px 0 rgba(107, 73, 28, 0.08);
 }
 
 .menu {
   position: relative;
-  width: min(72%, 710px);
-  margin: 28px auto 0;
-  z-index: 2;
+  width: min(70%, 720px);
+  margin: 18px auto 0;
+  z-index: 4;
 }
 
 .line {
   height: 2px;
   background: linear-gradient(to right, transparent, var(--gold), transparent);
-  margin: 18px 0 12px;
+  margin: 16px 0 10px;
   box-shadow: 0 1px 0 rgba(131, 92, 37, 0.16);
 }
 
@@ -131,10 +131,10 @@ body {
 
 .temple {
   position: absolute;
-  right: min(7vw, 120px);
-  top: 400px;
-  width: clamp(150px, 18vw, 240px);
-  height: clamp(130px, 16vw, 210px);
+  right: min(9vw, 130px);
+  top: 410px;
+  width: clamp(120px, 15vw, 200px);
+  height: clamp(100px, 13vw, 170px);
   z-index: 1;
   opacity: 0.95;
 }
@@ -244,7 +244,7 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
   color: var(--ink);
   letter-spacing: 0.04em;
-  font-size: clamp(2.2rem, 2.5vw, 3.4rem);
+  font-size: clamp(2.2rem, 2.6vw, 3.3rem);
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
@@ -252,8 +252,8 @@ body {
 }
 
 .course h3 {
-  margin: 10px 0 10px;
-  font-size: clamp(2rem, 2.35vw, 3rem);
+  margin: 8px 0 8px;
+  font-size: clamp(1.9rem, 2.3vw, 2.9rem);
   line-height: 1.1;
   color: var(--ink);
   font-weight: 700;
@@ -265,8 +265,8 @@ body {
 
 .course p {
   margin: 0;
-  font-size: clamp(1.1rem, 1.55vw, 1.9rem);
-  line-height: 1.5;
+  font-size: clamp(1.02rem, 1.45vw, 1.8rem);
+  line-height: 1.38;
   color: var(--ink-dark);
   font-style: italic;
   font-weight: 400;
@@ -368,46 +368,46 @@ body {
 }
 
 .leaf-one {
-  left: -120px;
-  top: 12px;
+  left: -180px;
+  top: -34px;
   transform: rotate(-26deg);
 }
 
 .leaf-two {
-  left: -110px;
-  top: 288px;
-  width: 260px;
-  height: 350px;
+  left: -170px;
+  top: 220px;
+  width: 210px;
+  height: 290px;
   transform: rotate(-14deg);
 }
 
 .leaf-three {
-  left: -90px;
-  bottom: 56px;
-  width: 200px;
-  height: 280px;
+  left: -150px;
+  bottom: -8px;
+  width: 170px;
+  height: 230px;
   transform: rotate(24deg);
 }
 
 .leaf-four {
-  right: -118px;
-  top: 12px;
+  right: -180px;
+  top: -30px;
   transform: scaleX(-1) rotate(-20deg);
 }
 
 .leaf-five {
-  right: -100px;
-  top: 340px;
-  width: 250px;
-  height: 340px;
+  right: -170px;
+  top: 250px;
+  width: 210px;
+  height: 290px;
   transform: scaleX(-1) rotate(-10deg);
 }
 
 .leaf-six {
-  right: -94px;
-  bottom: 56px;
-  width: 190px;
-  height: 270px;
+  right: -150px;
+  bottom: -8px;
+  width: 170px;
+  height: 230px;
   transform: scaleX(-1) rotate(14deg);
 }
 
@@ -452,15 +452,15 @@ body {
 .flower .p8 { transform: translate(-50%, -50%) rotate(315deg) translateY(-40px); }
 
 .flower-left {
-  left: 10px;
-  top: 32px;
-  transform: rotate(-10deg) scale(0.92);
+  left: 4px;
+  top: 18px;
+  transform: rotate(-10deg) scale(0.72);
 }
 
 .flower-right {
   right: 8px;
-  top: 34px;
-  transform: scaleX(-1) rotate(-6deg) scale(0.92);
+  top: 18px;
+  transform: scaleX(-1) rotate(-6deg) scale(0.72);
 }
 
 .chili {
@@ -498,15 +498,15 @@ body {
 }
 
 .chili-left {
-  left: 90px;
-  bottom: 130px;
-  transform: rotate(14deg);
+  left: 20px;
+  bottom: 150px;
+  transform: rotate(14deg) scale(0.7);
 }
 
 .chili-right {
-  right: 82px;
-  top: 240px;
-  transform: scaleX(-1) rotate(-38deg);
+  right: 18px;
+  top: 252px;
+  transform: scaleX(-1) rotate(-38deg) scale(0.7);
 }
 
 @media (max-width: 960px) {
@@ -520,10 +520,10 @@ body {
 
 .tuktuk {
   position: absolute;
-  left: min(3vw, 42px);
-  bottom: 35px;
-  width: clamp(150px, 18vw, 220px);
-  height: clamp(90px, 11vw, 130px);
+  left: min(2vw, 26px);
+  bottom: 28px;
+  width: clamp(130px, 16vw, 190px);
+  height: clamp(80px, 9vw, 110px);
   z-index: 2;
 }
 
