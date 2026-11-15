@@ -41,8 +41,8 @@ body {
 
 .poster {
   position: relative;
-  width: min(92vw, 960px);
-  min-height: 1400px;
+  width: min(92vw, 1024px);
+  aspect-ratio: 1024 / 1535;
   background: var(--paper);
   box-shadow: 0 18px 32px rgba(58, 30, 12, 0.18);
   overflow: hidden;
@@ -62,18 +62,20 @@ body {
 
 .hero {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 82px;
 }
 
 .hero h1 {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 860px;
+  width: min(100%, 860px);
   font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
   font-size: clamp(5rem, 9vw, 15rem);
-  line-height: 0.85;
+  line-height: 0.8;
   color: var(--ink);
-  letter-spacing: -0.08em;
+  letter-spacing: -0.09em;
   transform: scaleY(0.92);
   text-shadow: 2px 4px 0 rgba(132, 31, 16, 0.25);
 }
@@ -96,17 +98,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--gold-dark);
   font-weight: 700;
+  text-shadow: 0 1px 0 rgba(107, 73, 28, 0.08);
 }
 
 .subhead .caps {
   font-size: clamp(1.3rem, 2vw, 2rem);
   letter-spacing: 0.14em;
+  text-shadow: 0 1px 0 rgba(107, 73, 28, 0.08);
 }
 
 .menu {
   position: relative;
-  width: min(76%, 720px);
-  margin: 48px auto 0;
+  width: min(72%, 710px);
+  margin: 28px auto 0;
   z-index: 2;
 }
 
@@ -114,6 +118,11 @@ body {
   height: 2px;
   background: linear-gradient(to right, transparent, var(--gold), transparent);
   margin: 18px 0 12px;
+  box-shadow: 0 1px 0 rgba(131, 92, 37, 0.16);
+}
+
+.line-top {
+  margin-top: 8px;
 }
 
 .line-top {
@@ -122,10 +131,10 @@ body {
 
 .temple {
   position: absolute;
-  right: 120px;
+  right: min(7vw, 120px);
   top: 400px;
-  width: 240px;
-  height: 210px;
+  width: clamp(150px, 18vw, 240px);
+  height: clamp(130px, 16vw, 210px);
   z-index: 1;
   opacity: 0.95;
 }
@@ -235,27 +244,29 @@ body {
   font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
   color: var(--ink);
   letter-spacing: 0.04em;
-  font-size: clamp(2.4rem, 3vw, 4rem);
+  font-size: clamp(2.2rem, 2.5vw, 3.4rem);
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(76, 7, 14, 0.08);
 }
 
 .course h3 {
   margin: 10px 0 10px;
-  font-size: clamp(2.1rem, 2.5vw, 3.2rem);
+  font-size: clamp(2rem, 2.35vw, 3rem);
   line-height: 1.1;
   color: var(--ink);
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   font-style: normal;
+  text-shadow: 0 1px 0 rgba(76, 7, 14, 0.08);
 }
 
 .course p {
   margin: 0;
-  font-size: clamp(1.15rem, 1.7vw, 2.1rem);
-  line-height: 1.55;
+  font-size: clamp(1.1rem, 1.55vw, 1.9rem);
+  line-height: 1.5;
   color: var(--ink-dark);
   font-style: italic;
   font-weight: 400;
@@ -357,46 +368,46 @@ body {
 }
 
 .leaf-one {
-  left: -90px;
-  top: 18px;
+  left: -120px;
+  top: 12px;
   transform: rotate(-26deg);
 }
 
 .leaf-two {
-  left: -84px;
-  top: 295px;
-  width: 275px;
-  height: 370px;
+  left: -110px;
+  top: 288px;
+  width: 260px;
+  height: 350px;
   transform: rotate(-14deg);
 }
 
 .leaf-three {
-  left: -76px;
-  bottom: 70px;
-  width: 210px;
-  height: 300px;
+  left: -90px;
+  bottom: 56px;
+  width: 200px;
+  height: 280px;
   transform: rotate(24deg);
 }
 
 .leaf-four {
-  right: -82px;
-  top: 20px;
+  right: -118px;
+  top: 12px;
   transform: scaleX(-1) rotate(-20deg);
 }
 
 .leaf-five {
-  right: -60px;
-  top: 350px;
-  width: 260px;
-  height: 360px;
+  right: -100px;
+  top: 340px;
+  width: 250px;
+  height: 340px;
   transform: scaleX(-1) rotate(-10deg);
 }
 
 .leaf-six {
-  right: -72px;
-  bottom: 70px;
-  width: 200px;
-  height: 290px;
+  right: -94px;
+  bottom: 56px;
+  width: 190px;
+  height: 270px;
   transform: scaleX(-1) rotate(14deg);
 }
 
@@ -441,15 +452,15 @@ body {
 .flower .p8 { transform: translate(-50%, -50%) rotate(315deg) translateY(-40px); }
 
 .flower-left {
-  left: 36px;
-  top: 50px;
-  transform: rotate(-10deg) scale(1.08);
+  left: 10px;
+  top: 32px;
+  transform: rotate(-10deg) scale(0.92);
 }
 
 .flower-right {
-  right: 34px;
-  top: 58px;
-  transform: scaleX(-1) rotate(-6deg) scale(1.07);
+  right: 8px;
+  top: 34px;
+  transform: scaleX(-1) rotate(-6deg) scale(0.92);
 }
 
 .chili {
@@ -509,10 +520,10 @@ body {
 
 .tuktuk {
   position: absolute;
-  left: 42px;
+  left: min(3vw, 42px);
   bottom: 35px;
-  width: 220px;
-  height: 130px;
+  width: clamp(150px, 18vw, 220px);
+  height: clamp(90px, 11vw, 130px);
   z-index: 2;
 }
 
@@ -586,11 +597,11 @@ body {
 
 .fruit {
   position: absolute;
-  right: 70px;
+  right: min(6vw, 70px);
   bottom: 180px;
   z-index: 1;
-  width: 150px;
-  height: 150px;
+  width: clamp(110px, 12vw, 150px);
+  height: clamp(110px, 12vw, 150px);
   border-radius: 50%;
   background: linear-gradient(135deg, #f3b44d 0%, #d98e2a 65%, #c97715 100%);
   box-shadow: inset -18px -12px 0 rgba(112, 58, 0, 0.12);
